@@ -1,0 +1,119 @@
+$primary: #202020;
+$secondary: white;
+
+.container {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 100;
+  flex-direction: column;
+}
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  transition: transform 0.1s;
+}
+.searchs {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  label {
+    font-size: 14px;
+    color: &$secondary;
+  }
+}
+.box {
+  background-color: $primary;
+  border-radius: 15px;
+  border: 2px solid gray;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10;
+}
+.box:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  box-shadow: rgba(115, 168, 185, 0.5);
+}
+.button {
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  border: solid 1px gray;
+  background-color: #0000;
+  background: $primary;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $secondary;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  :hover {
+    background-color: #000;
+  }
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.checkbox-wrapper label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+label + p {
+  color: grey;
+}
+
+/* Customizing the checkbox */
+
+.checkbox-wrapper input[type="checkbox"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 3em;
+  height: 1.8em;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+  border: 0.15em solid grayscale($color: #312f2f38);
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]:disabled + span {
+  color: #c0c0c0;
+}

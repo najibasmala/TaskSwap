@@ -1,0 +1,8 @@
+the strcture of app
+-compoenents folder contains button,box and Content compoenents
+  *button:used to transfer tasks
+  *box :contains the list of tasks
+  *content:contains search input and and boxes
+  
+  -styles folder:contain sass file :css of app
+  -context :contain the context of all checked taks from right and left
